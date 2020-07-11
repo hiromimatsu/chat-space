@@ -1,0 +1,56 @@
+@import "clearfix";
+
+.wrapper{
+  display: flex;
+}
+
+.side-ber {
+  background-color: #253141;
+  width: 300px;
+  height: 100vh;
+  &__user-name {
+    @include clearfix();
+    background-color: #253141;
+    height: 100px;
+    &__top-items {
+      height: 20px;
+      width: 260px;
+      margin: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      &__name {
+        color: #ffffff;
+        font-size: 16px;
+      }
+      &__icons {
+        width: 60px;
+        display: flex;
+        justify-content: flex-end;
+        &__btn {
+          color: #ffffff;
+          text-decoration: none;
+          &--edit {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+  &__group-list {
+    background-color: #2f3e51;
+    height: calc(100vh - 100px);
+    &__group {
+      color: #ffffff;
+      font: bold;
+      margin: 0 20px;
+      &__group-name {
+        font-size: 15px;
+        padding-top: 20px;
+      }
+      &__group-message {
+        font-size: 11px;
+        padding: 5px 0 40px 0;
+      }
+    }
+  }
+}
