@@ -1,0 +1,96 @@
+@import "clearfix";
+
+.chat-main {
+  background-color: #ffffff;
+  width: calc(100vw - 300px);
+  height: 100vh;
+  .group-info {
+    background-color: #ffffff;
+    height: 100px;
+    margin: 0 40px;
+    @include clearfix();
+    justify-content: space-between;
+    &__current-group {
+      color: #333333;
+      font-size: 20px;
+      padding-top: 35px;
+      &__member-list {
+        color: #999999;
+        font-size: 12px;
+        padding-top: 15px;
+      }
+    }
+    &__edit {
+      height: 40px;
+      width: 72px;
+      padding: 0 20px;
+      border: 1px solid #38aef0;
+      text-align: center;
+      @include clearfix();
+      &__edit-btn {
+        text-decoration: none;
+        color: #38aef0;
+        font-size: 16px;
+      }
+    }
+  }
+  .message-list {
+    background-color: #fafafa;
+    height: calc(100vh - 100px - 90px);
+    padding: 35px 0 0 40px;
+    &__user-name {
+      color: #333333;
+      font-size: 16px;
+      display: flex;
+      padding-bottom: 12px;
+      &__date {
+        color: #999999;
+        font-size: 12px;
+      }
+    }
+    &__message {
+      color: #434A54;
+      font-size: 14px;
+      padding-bottom: 46px;
+    }
+  }
+
+  .message-form {
+    background-color: #d2d2d2;
+    height: 90px;
+    padding: 20px 40px;
+    form {
+      display: flex;
+      .input-box {
+        width: 100%;
+        display: flex;
+        position: relative;
+        &__text {
+          background-color: #ffffff;
+          color: #999999;
+          height: 50px;
+          width: 100%;
+          padding: 0 0 0 10px;
+          border-style: none;
+        }
+        &__image {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          input {
+            display: none;
+          }
+        }
+      }
+      .submit-btn {
+        background-color: #38aef0;
+        color: #ffffff;
+        font-size: 16px;
+        height: 50px;
+        padding: 0 40px;
+        margin-left: 15px;
+        border-style: none;
+      }  
+    }
+  }
+}
