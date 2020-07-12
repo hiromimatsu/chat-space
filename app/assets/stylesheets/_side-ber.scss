@@ -4,50 +4,49 @@
   display: flex;
 }
 
-.side {
+.chat-side {
   background-color: #253141;
   width: 300px;
   height: 100vh;
-  &__user-name {
+  .side-header {
     @include clearfix();
-    background-color: #253141;
     height: 100px;
-    &__top-items {
+    color: white;
+    &__box {
       height: 20px;
       width: 260px;
       margin: 0 20px;
       display: flex;
       justify-content: space-between;
       &__name {
-        color: #ffffff;
         font-size: 16px;
+        font-weight: bold;
       }
-      &__icons {
+      &__menu {
         width: 60px;
         display: flex;
         justify-content: flex-end;
-        &__btn {
-          color: #ffffff;
+        a {
           text-decoration: none;
-          &--edit {
-            margin-right: 5px;
-          }
+          color: white;
+          padding-left: 5px;
         }
       }
     }
   }
-  &__group-list {
+
+  .side-group {
     background-color: #2f3e51;
     height: calc(100vh - 100px);
-    &__group {
+    &__list {
       color: #ffffff;
       font: bold;
       margin: 0 20px;
-      &__group-name {
+      &__name {
         font-size: 15px;
         padding-top: 20px;
       }
-      &__group-message {
+      &__message {
         font-size: 11px;
         padding: 5px 0 40px 0;
       }
