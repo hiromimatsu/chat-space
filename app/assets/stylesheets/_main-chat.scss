@@ -54,38 +54,43 @@
       padding-bottom: 46px;
     }
   }
+
   &__message-form {
     background-color: #d2d2d2;
     height: 90px;
-    padding: 0 40px;
-    @include clearfix();
-    &__input-text {
-      background-color: #ffffff;
-      color: #999999;
-      height: 50px;
-      width: 100%;
-      padding: 0 10px;
-      @include clearfix();
-      position: relative;
-      &--image {
-        color: #000000;
-        position: absolute;
-        right: 10px;
-        .input-box__image {
-          input{
+    padding: 20px 40px;
+    form {
+      display: flex;
+      .input-box {
+        width: 100%;
+        display: flex;
+        position: relative;
+        &__text {
+          background-color: #ffffff;
+          color: #999999;
+          height: 50px;
+          width: 100%;
+          padding: 0 0 0 10px;
+          border-style: none;
+        }
+        &__image {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          input {
             display: none;
           }
         }
       }
+      .submit-btn {
+        background-color: #38aef0;
+        color: #ffffff;
+        font-size: 16px;
+        height: 50px;
+        padding: 0 40px;
+        margin-left: 15px;
+        border-style: none;
+      }  
     }
-    &__submit-btn {
-      background-color: #38aef0;
-      color: #ffffff;
-      font-size: 16px;
-      height: 50px;
-      padding: 0 40px;
-      margin-left: 15px;
-      @include clearfix();
-    }  
   }
 }
