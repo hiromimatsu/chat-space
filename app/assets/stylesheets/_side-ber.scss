@@ -39,9 +39,12 @@
     background-color: #2f3e51;
     height: calc(100vh - 100px);
     &__list {
-      color: #ffffff;
       font: bold;
       margin: 0 20px;
+      a {
+        text-decoration: none;
+        color: white;
+      }
       &__name {
         font-size: 15px;
         padding-top: 20px;
